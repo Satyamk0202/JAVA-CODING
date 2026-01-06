@@ -1,20 +1,19 @@
-class square{
-    int side;
-
-public  int area(){
-    
-   return side*side;
-}
-public int  parameter(){
-return 4*side;
-}
-}
+import java.util.Scanner;
 public class a3 {
-    public static void main(String[] args) {
-        
-    
-    square x1=new square();
-    x1.side=2;
-    System.out.println(x1.area());
-}
+    //write a program to sum of given even number
+    public static void main() {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your numbers here:");
+
+        int num = sc.nextInt();
+        int sum=0;
+        for(int i=0;i<=num;i++){
+            if(i %2 ==0){
+                sum=sum+i;
+            }
+
+        }
+        System.out.println("the sum of your num is:"+sum);
+
+    }
 }
